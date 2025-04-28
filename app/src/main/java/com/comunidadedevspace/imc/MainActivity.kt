@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,40 +12,49 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Recuperar os componentes EditText
-        //Criar uma variável e associá-la ao componente de UI(TextInputEditText)
-        //Recuperar o botão da tela
-        //Colocar ação no botão
-        //Recuperar o texto digitado no edtpeso
+        //Retrieve the EditText components
+        //Create a variable and associate it with the UI component(TextInputEditText)
+        //Retrieve the screen button
+        //Put action on the button
+        //Retrieve the text entered in edtweight
 
-        val edtpeso     = findViewById<TextInputEditText>(R.id.edt_peso)
-        val edtaltura   = findViewById<TextInputEditText>(R.id.edt_altura)
-        val btnCalcular = findViewById<Button>(R.id.btn_calcular)
+        val edtweight     = findViewById<TextInputEditText>(R.id.edt_weight)
+        val edtheight   = findViewById<TextInputEditText>(R.id.edt_height)
+        val btnCalculate = findViewById<Button>(R.id.btn_calculate)
 
-        btnCalcular.setOnClickListener{
+        btnCalculate.setOnClickListener{
 
-            val pesoStr: String = edtpeso.text.toString()
-            val alturaStr: String = edtaltura.text.toString()
+            val weightStr: String = edtweight.text.toString()
+            val heightStr: String = edtheight.text.toString()
 
-            if (pesoStr == "" || alturaStr == ""){
-                //mostrar mensagen para o usuário
+            if (weightStr == "" || heightStr == ""){
+                //show message to user
                 Snackbar.make(
-                    edtpeso,
-                    "Preencha todos os campos",
+                    edtweight,
+                    "Please, fill in all fields",
                     Snackbar.LENGTH_LONG
                 )
                 .show()
 
             } else {
 
-                val peso: Float = pesoStr.toFloat()
-                val altura: Float = alturaStr.toFloat()
+                val weight: Float = weightStr.toFloat()
+                val height: Float = heightStr.toFloat()
 
 
-                val alturaQ2 = altura * altura
-                val resultado = peso / alturaQ2
+                val heightQ2 = height * height
+                val result = weight / heightQ2
 
-                println("Ação do Botão " + resultado)
+                //Navigate to the next screen
+                //Create next screen layout
+                //Pass data (result) to next screen
+
+                //Intent - Class from Android Studio
+
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_BMI,result)
+                startActivity(intent)
+
             }
 
         }
