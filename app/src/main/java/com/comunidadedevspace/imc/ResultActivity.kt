@@ -1,9 +1,11 @@
 package com.comunidadedevspace.imc
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -29,6 +31,14 @@ class ResultActivity : AppCompatActivity() {
             "OBESITY"
         } else {
             "SEVERE OBESITY"
+        }
+
+        when (classification) {
+            "THINNESS"          -> tvClassification.setTextColor(Color.parseColor("#F44336"))
+            "NORMAL"            -> tvClassification.setTextColor(Color.parseColor("#4CAF50"))
+            "OVERWEIGHT I"      -> tvClassification.setTextColor(Color.parseColor("#ECD172"))
+            "OBESITY"           -> tvClassification.setTextColor(Color.parseColor("#F44336"))
+            "SEVERE OBESITY"   -> tvClassification.setTextColor(Color.parseColor("#F44336"))
         }
 
         tvClassification.text = classification

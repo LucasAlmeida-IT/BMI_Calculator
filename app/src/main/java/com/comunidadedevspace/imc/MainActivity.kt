@@ -55,6 +55,10 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(KEY_RESULT_BMI,result)
                 startActivity(intent)
 
+                //Colors
+                //EditText background + Icon
+                //Gradient + Icon + Title + Description
+
             }
 
         }
