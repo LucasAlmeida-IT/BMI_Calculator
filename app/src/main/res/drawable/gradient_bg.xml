@@ -9,6 +9,6 @@
         android:centerColor="@color/primary_center"
         android:endColor="@color/primary_end"
         android:type="linear"
-        android:angle="45"
+        android:angle="270"
         android:useLevel="false"/>
 </shape>
