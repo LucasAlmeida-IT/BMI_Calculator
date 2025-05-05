@@ -1,19 +1,31 @@
 # BMI Calculator
-Desc
+This project is a native Android application developed with the Kotlin language. Its main objective is to perform the user's BMI calculation according to the height and weight information provided on the main screen and present the result with its respective BMI classification according to the World Health Organization.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+<img src="https://github.com/user-attachments/assets/e80ae5e9-18b7-4010-ac51-5ca12d064942" width="260"/>
+<img src="https://github.com/user-attachments/assets/453870c2-047a-45ee-ac40-5fd4852a4539" width="260"/>
+<img src="https://github.com/user-attachments/assets/080150c1-92bd-4242-afd1-388e1f436838" width="260"/>
 
 ## technologies
-Techs
+- Activity
+- Intent
+- SnackBar
+- ViewGroups
+  - LinearLayout
+  - ConstraintLayout
+- Views
+  - ImageView
+  - TextView
+  - EditText
+  - Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2025 Lucas Almeida Santana
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
