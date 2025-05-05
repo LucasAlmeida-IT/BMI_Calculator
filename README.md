@@ -3,9 +3,9 @@ This project is a native Android application developed with the Kotlin language.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://github.com/user-attachments/assets/e80ae5e9-18b7-4010-ac51-5ca12d064942" width="260"/>
-<img src="https://github.com/user-attachments/assets/453870c2-047a-45ee-ac40-5fd4852a4539" width="260"/>
-<img src="https://github.com/user-attachments/assets/080150c1-92bd-4242-afd1-388e1f436838" width="260"/>
+<img src="https://github.com/user-attachments/assets/0bc67c03-2b8b-4d1a-aa91-2278168725d5" width="260"/>
+<img src="https://github.com/user-attachments/assets/42af130f-7ae8-412c-b1e1-282645d73638" width="260"/>
+<img src="https://github.com/user-attachments/assets/957a7edd-c3c7-489e-a24a-bc4e4093f5f5" width="260"/>
 
 ## technologies
 - Activity
