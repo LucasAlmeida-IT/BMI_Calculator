@@ -1,11 +1,11 @@
-# Calculadora IMC
+# BMI Calculator
 Desc
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 Screenshots
 
-## Tecnologias
+## technologies
 Techs
 
 
